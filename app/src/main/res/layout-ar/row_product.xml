@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="5dp"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:background="@drawable/product_bg"
+        android:clickable="false"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:id="@+id/imglr"
+                    android:clickable="false"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp">
+                    <com.widget.RoundedImg
+                        android:id="@+id/img"
+                        android:clickable="false"
+                        android:scaleType="centerCrop"
+                        app:round_corner_radius="5dp"
+                        android:layout_margin="3dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp" />
+                    
+                    <android.support.v7.widget.SwitchCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/status"
+                        android:layout_centerInParent="true"/>
+
+
+                    <ImageView
+                        android:id="@+id/imgadd"
+                        android:clickable="false"
+                        android:visibility="gone"
+                        android:tint="@color/orange"
+                        android:src="@drawable/arrow_up"
+                        android:scaleType="centerInside"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp" />
+                </RelativeLayout>
+
+                <com.balram.library.FotTextView
+                    android:clickable="false"
+                    android:layout_below="@+id/img"
+                    android:layout_marginBottom="1dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:id="@+id/name"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="#8b3e1f"
+                    app:customfont="Exo2-Thin.otf"
+                    android:textSize="11dp"/>
+
+            <LinearLayout
+                android:layout_below="@+id/name"
+                android:orientation="horizontal"
+                android:layout_marginBottom="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.balram.library.FotTextView
+                    android:clickable="false"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:id="@+id/discounted"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="@color/green"
+                    app:customfont="Exo2-Thin.otf"
+                    android:textSize="10dp"/>
+
+                <com.balram.library.FotTextView
+                    android:clickable="false"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:id="@+id/price"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="eee"
+                    android:textColor="@color/green"
+                    app:customfont="Exo2-Thin.otf"
+                    android:textSize="10dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+</LinearLayout>
+
+
+
+
+</RelativeLayout>

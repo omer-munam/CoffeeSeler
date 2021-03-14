@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:elevation="3dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:background="#0000"
+    android:padding="5dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.balram.library.FotTextView
+            android:layout_toRightOf="@+id/img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/orderid"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="\#ABE112"
+            android:layout_alignParentLeft="true"
+            android:textColor="#d46119"
+            app:customfont="Exo2-Bold.otf"
+            android:textSize="24dp"/>
+
+
+        <com.balram.library.FotTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/status"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Pending"
+            android:layout_alignParentRight="true"
+            android:drawableLeft="@drawable/order_status"
+            android:drawablePadding="5dp"
+            android:textColor="#1a5074"
+            app:customfont="Exo2-Bold.otf"
+            android:textSize="14dp"/>
+    </RelativeLayout>
+
+
+    <com.balram.library.FotTextView
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_toRightOf="@+id/img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/usrname"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:layout_marginTop="6dp"
+        android:layout_below="@+id/name"
+        android:textColor="@color/txt"
+        app:customfont="Exo2-Bold.otf"
+        android:drawableLeft="@drawable/avatar"
+        android:drawablePadding="5dp"
+        android:textSize="14dp"/>
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:orientation="horizontal">
+        <com.balram.library.FotTextView
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@+id/img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/deliverydate"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingLeft="3dp"
+            android:text="20-12-2018"
+            android:layout_below="@+id/nameloc"
+            android:textColor="@color/green"
+            app:customfont="Exo2-Bold.otf"
+            android:drawableLeft="@drawable/order_deltime"
+            android:drawablePadding="5dp"
+            android:textSize="14dp"/>
+
+        <com.balram.library.FotTextView
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@+id/img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/deliverytime"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingLeft="3dp"
+            android:text="00:00:00"
+            android:textColor="@color/red"
+            app:customfont="Exo2-Bold.otf"
+            android:drawablePadding="5dp"
+            android:textSize="14dp"/>
+    </LinearLayout>
+
+    <com.balram.library.FotTextView
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_toRightOf="@+id/img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/locationname"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:layout_marginTop="6dp"
+        android:layout_below="@+id/name"
+        android:textColor="#2c61b7"
+        app:customfont="Exo2-Bold.otf"
+        android:drawableLeft="@drawable/loc"
+        android:drawablePadding="5dp"
+        android:textSize="14dp"/>
+
+
+    <com.balram.library.FotTextView
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_toRightOf="@+id/img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/location"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:layout_marginTop="6dp"
+        android:layout_below="@+id/name"
+        android:textColor="@color/green"
+        app:customfont="Exo2-Bold.otf"
+        android:drawableLeft="@drawable/loc"
+        android:drawablePadding="5dp"
+        android:textSize="14dp"/>
+
+    <com.balram.library.FotTextView
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_toRightOf="@+id/img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dated"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="20-12-2018 00:00:00"
+        android:layout_marginTop="6dp"
+        android:layout_below="@+id/name"
+        android:textColor="#555"
+        app:customfont="Exo2-Regular.otf"
+        android:drawableLeft="@drawable/order_deltime"
+        android:drawablePadding="5dp"
+        android:textSize="14dp"/>
+
+    <com.balram.library.FotTextView
+        android:id="@+id/itemcount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="5dp"
+        android:layout_toRightOf="@+id/img"
+        android:drawableLeft="@drawable/order_qty"
+        android:drawablePadding="5dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="5"
+        android:textColor="#555"
+        android:textSize="14dp"
+        android:visibility="visible"
+        app:customfont="Exo2-Regular.otf" />
+
+
+    <com.balram.library.FotButton
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_toRightOf="@+id/img"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:id="@+id/delivery"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="@string/delivery_guys"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/rounded_green"
+        android:visibility="gone"
+        android:layout_marginTop="6dp"
+        android:layout_below="@+id/name"
+        android:textColor="#fff"
+        app:customfont="Exo2-Regular.otf"
+        android:textSize="14dp"/>
+
+</LinearLayout>
+</android.support.v7.widget.CardView>

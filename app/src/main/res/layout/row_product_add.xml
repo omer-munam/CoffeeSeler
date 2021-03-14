@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="5dp"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:background="@drawable/product_bg"
+        android:clickable="false"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <RelativeLayout
+            android:id="@+id/imglr"
+            android:clickable="true"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:layout_width="match_parent"
+            android:layout_height="120dp">
+            <com.widget.RoundedImg
+                android:id="@+id/img"
+                android:clickable="false"
+                android:scaleType="centerInside"
+                android:src="@drawable/arrow_up"
+                app:round_corner_radius="1dp"
+                android:tint="#9c3417"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"
+                android:layout_width="120dp"
+                android:layout_height="120dp" />
+
+            <ImageView
+                android:background="@drawable/circle_trans"
+                android:src="@drawable/arrow_up"
+                android:padding="10dp"
+                android:id="@+id/favimg"
+                android:visibility="invisible"
+                android:tint="#fff"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:clickable="false"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+
+        </RelativeLayout>
+
+        <com.balram.library.FotTextView
+            android:clickable="false"
+            android:visibility="invisible"
+            android:layout_below="@+id/img"
+            android:layout_marginBottom="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/name"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="#8b3e1f"
+            app:customfont="Exo2-Regular.otf"
+            android:textSize="14dp"/>
+
+        <com.balram.library.FotTextView
+            android:clickable="false"
+            android:visibility="invisible"
+            android:layout_below="@+id/name"
+            android:layout_marginBottom="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/price"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="#4b4a4a"
+            app:customfont="Exo2-Regular.otf"
+            android:textSize="14dp"/>
+
+</LinearLayout>
+</RelativeLayout>

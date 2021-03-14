@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "749250087342",
+    "firebase_url": "https://tamwinati-181418.firebaseio.com",
+    "project_id": "tamwinati-181418",
+    "storage_bucket": "tamwinati-181418.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:749250087342:android:c626fc95477db7a9",
+        "android_client_info": {
+          "package_name": "com.tami.seller.ksa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "749250087342-1vb1o5gi9manqnf7ocv870iq7udiba41.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tami.seller.ksa",
+            "certificate_hash": "f1591cf3252ed110bd548d8aa1f351af144a27e8"
+          }
+        },
+        {
+          "client_id": "749250087342-q6jbsrl0ie1gbnupjtcgcfdthop1hari.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxMryBmBGzIXk53c1KoXqOYgc72vCyqvA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "749250087342-q6jbsrl0ie1gbnupjtcgcfdthop1hari.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

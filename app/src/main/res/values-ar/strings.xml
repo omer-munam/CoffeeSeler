@@ -1,0 +1,234 @@
+<resources>
+    <string name="app_name">بائع القهوة</string>
+
+    <string name="loc_needed">تفعيل نظام تحديد المواقع</string>
+    <string name="error">خطأ في تحميل التطبيق</string>
+
+
+    <string name="search">البحث</string>
+
+    <string name="gps_network_not_enabled">يجب تفعيل نظام تحديد المواقع حتى يتمكن التطبيق من العمل</string>
+    <string name="open">فتح</string>
+    <string name="cancel">الغاء</string>
+
+
+
+
+    <string name="view_product">مشاهدة المنتج</string>
+    <string name="next_delivery">التوصيل القادم</string>
+    <string name="view_cart">مشاهدة السلة</string>
+    <string name="select_custom_date">اختيار تاريخ معين</string>
+
+
+    <string name="signin">تسجيل الدخول</string>
+    <string name="signup">التسجيل</string>
+
+    <string name="userid"> المستخدم</string>
+    <string name="email">البريد الالكتروني</string>
+    <string name="password">كلمة المرور</string>
+    <string name="confirmpwd">تأكيد كلمة المرور</string>
+    <string name="password_new">كلمة مرور جديدة</string>
+    <string name="confirmpwd_new">تأكيد كلمة المرور الجديدة</string>
+    <string name="mobile">رقم الاتصال</string>
+
+    <string name="not_enuf_time">الوقت غير كافي</string>
+
+    <string name="id_cannot_be_blank">يجب إدخال اسم المستخدم</string>
+    <string name="email_username">البريد الالكتروني</string>
+    <string name="or_connect">أو الاتصال</string>
+
+    <string name="difficulty_signin">لم تستطع الدخول إلى حسابك؟</string>
+
+
+    <string name="invalid_email">البريد الالكتروني غير صحيح</string>
+    <string name="invalid_pwd">خطأ في كلمة المرور</string>
+    <string name="invalid_cpwd">كلمة المرور وتأكيد كلمة المرور</string>
+    <string name="invalid_mobile">رقم الجوال غير صحيح</string>
+    <string name="invalid_username">اسم المستخدم غير صحيح</string>
+    <string name="error_registration">خطأ في عملية التسجيل</string>
+    <string name="error_login">خطأ في عملية الدخول</string>
+    <string name="please_wait_before_registration">الرجاء الانتظار</string>
+    <string name="enter_pwd">الرجاء ادخال البريد الالكتروني</string>
+    <string name="username">الاسم كامل</string>
+    <string name="invalid_name">يجب ادخال الاسم</string>
+
+    <string name="account">الحساب</string>
+    <string name="error_network">حدث خطأ في المعالجة</string>
+    <string name="done">انتهى</string>
+
+
+    <string-array name="menuitems">
+        <item>الخروج</item>
+        <item>اللغة</item>
+    </string-array>
+
+    <string name="select_address">احتر العنوان</string>
+
+    <string name="place_picker_search_label">ابحث</string>
+    <string name="place_picker_search_hint">ابحث عن المكان</string>
+    <string name="title_activity_recent_searches">نتائج البحث السابقة</string>
+    <string name="more_recent_history_text">MORE FROM RECENT HISTORY</string>
+
+
+
+
+    <string name="menu_fav">المفضلة</string>
+    <string name="menu_offer">العروض</string>
+    <string name="menu_stores">المتاجر</string>
+
+    <string name="menu_language">اللغة</string>
+    <string name="menu_about">حول التطبيق</string>
+    <string name="menu_share">مشاركة </string>
+    <string name="menu_logout">تسجيل الخروج</string>
+    <string name="menu_account">الحساب</string>
+    <string name="menu_order">الطلبات</string>
+    <string name="menu_branches">الفروع</string>
+    <string name="menu_locations">المواقع</string>
+    <string name="menu_categories">الاصناف الرئيسية</string>
+    <string name="menu_subcat">الاصناف الفرعية</string>
+    <string name="menu_product">المنتجات</string>
+    <string name="menu_status">الحالة</string>
+    <string name="menu_delivery">قيمة التوصيل</string>
+    <string name="menu_help">مساعدة</string>
+
+    <string name="location">الموقع</string>
+    <string name="save_locations">حفظ الموقع</string>
+
+    <string name="are_you_sure">ل انت متأكد؟</string>
+    <string name="logout_from_app">الخروج من التطبيق؟</string>
+    <string name="place_order_with_dl_del"> إكمال الطلب مع اختيار موقع ووقت التوصيل</string>
+    <string name="yes">نعم</string>
+    <string name="no">لا</string>
+    <string name="change_location">تغيير مكان التوصيل</string>
+
+    <string name="error_placing_order">خطأ في عملية الطلب</string>
+    <string name="check_your_internet">تأكد من الاتصال بالانترنت</string>
+    <string name="unknown_error">خطأ غير معروف</string>
+    <string name="error_loading_prev_locations">خطأ في تحميل المواقع السابقة</string>
+    <string name="select_new_location"> اختيار موقع جديد</string>
+    <string name="my_orders">طلباتي</string>
+    <string name="remind">تذكير</string>
+
+    <string name="pending">معلق</string>
+    <string name="delivered">تم تسليمه</string>
+
+
+
+    <string name="invalid_name_ar">الاسم بالعربية غير صحيح</string>
+    <string name="invalid_phone_number">رقم الهاتف غير صحيح</string>
+
+    <string name="en_blank">يجب تعبئة الاسم بالعربي</string>
+    <string name="ar_blank">يجب تعبئة الاسم بالانجليزي</string>
+    <string name="location_blank">يجب ادخال الموقع</string>
+    <string name="save_category">حفظ الصنف</string>
+    <string name="save_subcategory">حفظ الصنف الفرعي</string>
+    <string name="image_blank"> يجب ادراج صورة</string>
+    <string name="select_category">اختر الصنف</string>
+    <string name="category_blank">يجب ادخال الصنف</string>
+    <string name="choose_from_available">الاختيار من القائمة</string>
+    <string name="select_subcategory">اختر الصنف الفرعي</string>
+    <string name="select_location">اختر الموقع</string>
+    <string name="price">السعر</string>
+    <string name="invalid_price">السعر غير صحيح</string>
+    <string name="save_product">حفظ المنتج</string>
+    <string name="mark_moved">تم التوصيل</string>
+
+    <string name="name_en">الاسم بالانجليزية</string>
+    <string name="name_ar">الاسم بالعربية</string>
+
+
+
+    <string name="error_updating_profile">خطأ في تحديث الملف الشخصي</string>
+    <string name="name_blank"> يجب تعبئة حقل الاسم</string>
+    <string name="email_blank">يجب تعبئة حقل البريد الالكتروني</string>
+    <string name="email_invalid">البربد الالكتروني غير صحيح</string>
+    <string name="password_min_char">يجب ان تكون كلمة المرور 6 خانات</string>
+    <string name="password_mismatch">كلمة المرور غير مطابقة</string>
+    <string name="name">الاسم</string>
+    <string name="confirmpassword">تأكيد كلمة المرور</string>
+    <string name="phone">رقم الهاتف اختياري</string>
+    <string name="oldPassword">كلمة المرور الحالية</string>
+    <string name="old_password_cannot_b_blank">يجب ادخال كلمة المرور الحالية</string>
+    <string name="error_in_data">خطأ في استعادة البيانات</string>
+    <string name="error_response">اجابة غير متوقعة</string>
+    <string name="updated_success"> تم تحديث الملف الشخصي بنجاح</string>
+    <string name="menu_profile">الملف</string>
+    <string name="logout">تسجيل الخروج</string>
+    <string name="upload_pic">تحميل الصورة</string>
+    <string name="pick_image_intent_text">اختر صورة للملف الشخصي</string>
+    <string name="gross_total">السعر شامل الضريبة المضافة</string>
+    <string name="deliverycost">قيمة التوصيل</string>
+    <string name="net_total">المجموع الكلي</string>
+
+
+    <string name="order_ordered_date">تاريخ الطلب</string>
+    <string name="order_qty">الاصناف المطلوبة</string>
+    <string name="order_delivery_date">وقت التوصيل</string>
+    <string name="order_placed">تم الطلب</string>
+    <string name="order_accepted">تم قبول الطلب </string>
+    <string name="order_ready">تم التجهيز</string>
+    <string name="order_delivered">تم الارسال </string>
+    <string name="order_closed">تم التوصيل</string>
+    <string name="order_cancelled"> تم الغاء الطلب</string>
+    <string name="order_return">عودة معلقة</string>
+    <string name="delivery_location">موقع التوصيل</string>
+
+
+    <string name="available">متاح</string>
+    <string name="not_available">غير متاح</string>
+    <string name="currency">ريال</string>
+    <string name="cancel_order">الغاء الطلب من هذا المتجر؟</string>
+    <string name="call_is_required_to_contact">امكانية الاتصال لمعرفة حالة الطلبات</string>
+
+    <string name="edit"> تصحيح</string>
+    <string name="view_orders">مشاهدة الطلبات</string>
+    <string name="set_status">حالة الطلب</string>
+
+    <string name="update_profile">حفظ</string>
+
+
+    <string name="completed"> مكتمل</string>
+    <string name="cancelled">مرفوض</string>
+    <string name="ready">جاهز</string>
+    <string name="accepted">مقبول</string>
+    <string name="dispatched">جاري توصيل</string>
+    <string name="neworders">جديد</string>
+    <string name="add_offer">إضافة عرض</string>
+    <string name="text">العرض</string>
+    <string name="save">حفظ</string>
+    <string name="text_blank">يجب تعبئة حقل العرض</string>
+    <string name="coverage">نطاق التغطية بالكيلومتر</string>
+    <string name="invalid_coverage_radius">نطاق التغطية غير صحيح</string>
+    <string name="offer_price">سعر العرض</string>
+    <string name="menu_delete">إزالة هذا الفرع</string>
+    <string name="signup_for_new">تسجيل حساب جديد؟</string>
+    <string name="already_have_account">لديك حساب مسبق</string>
+    <string name="edit_profile">تحرير الملف الشخصي</string>
+    <string name="menu_notifications">اشعارات</string>
+    <string name="location_name">اسم الموقع</string>
+
+    <string name="radius">نطاق التغطية</string>
+    <string name="location_loading">جاري تحميل الموقع</string>
+    <string name="select_location_plz">الرجاء اختيار الموقع أولاً</string>
+
+
+    <string name="delivery_guys">توصيل</string>
+    <string name="total_orders">مجموع الفواتير</string>
+    <string name="my_orders_carried">فواتير مكتملة</string>
+    <string name="total_pending">جميع الفواتيرالمعلقة</string>
+    <string name="my_orders_pending">فواتير معلقة</string>
+    <string name="distance_away">يبعد عن المتجر</string>
+    <string name="select_for_delivery">تحديد</string>
+    <string name="myself">استلام من المتجر</string>
+    <string name="no_delivery_sure">هل تريد استلام الطلب من المتجر ؟</string>
+
+
+    <string name="all_products">جميع المنتجات</string>
+    <string name="please_select_location_first">يرجى اختيار الموقع أولاَ</string>
+    <string name="please_select_cat_first">يرجى اختيار الفئة </string>
+    <string name="minimum_del_cost">الحد الأدنى للمبلغ للتسليم</string>
+
+    <string name="create_new_acccount">إنشاء حساب جديد</string>
+    <string name="address_details"> وصف للعنوان - الحي / اسم الشارع / رقم المبنى </string>
+
+</resources>

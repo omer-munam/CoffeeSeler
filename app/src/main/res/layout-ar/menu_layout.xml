@@ -1,0 +1,631 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:background="#fff"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ScrollView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <LinearLayout
+                android:layout_marginBottom="1px"
+                android:background="#fcfcfc"
+                android:paddingLeft="@dimen/profile_lr_padding"
+                android:paddingRight="@dimen/profile_lr_padding_rt"
+                android:gravity="center_vertical"
+                android:id="@+id/menu_orders"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:clickable="true"
+                android:tag="10"
+                android:visibility="gone"
+                android:onClick="menuClicked"
+                android:layout_height="@dimen/profile_widget">
+
+                <ImageView
+                    android:clickable="true"
+                    android:tag="10"
+                    android:onClick="menuClicked"
+                    android:scaleType="centerInside"
+                    android:tint="@color/profile_hint_img"
+                    android:src="@drawable/menu_orders"
+                    android:padding="@dimen/profile_padding"
+                    android:layout_width="@dimen/profile_hint_img"
+                    android:layout_height="@dimen/profile_hint_img" />
+
+                <com.balram.library.FotTextView
+                    android:clickable="true"
+                    android:tag="10"
+                    android:onClick="menuClicked"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right|center_vertical"
+                    android:text="@string/menu_order"
+                    android:drawablePadding="5dp"
+                    android:paddingBottom="@dimen/profile_etx_gap"
+                    android:textColorHint="@color/profile_hint"
+                    android:textColor="@color/profile_txt"
+                    app:customfont="Exo2-Regular.otf"
+                    android:layout_marginRight="10dp"
+                    android:textSize="@dimen/profile_txt"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginBottom="1px"
+                android:background="#fcfcfc"
+                android:paddingLeft="@dimen/profile_lr_padding"
+                android:paddingRight="@dimen/profile_lr_padding_rt"
+                android:gravity="center_vertical"
+                android:id="@+id/menu_locations"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:clickable="true"
+                android:tag="11"
+                android:onClick="menuClicked"
+                android:layout_height="@dimen/profile_widget">
+
+                <ImageView
+                    android:clickable="true"
+                    android:tag="11"
+                    android:onClick="menuClicked"
+                    android:scaleType="centerInside"
+                    android:tint="@color/profile_hint_img"
+                    android:src="@drawable/menu_orders"
+                    android:padding="@dimen/profile_padding"
+                    android:layout_width="@dimen/profile_hint_img"
+                    android:layout_height="@dimen/profile_hint_img" />
+
+                <com.balram.library.FotTextView
+                    android:clickable="true"
+                    android:tag="11"
+                    android:onClick="menuClicked"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right|center_vertical"
+                    android:text="@string/menu_branches"
+                    android:drawablePadding="5dp"
+                    android:paddingBottom="@dimen/profile_etx_gap"
+                    android:textColorHint="@color/profile_hint"
+                    android:textColor="@color/black"
+                    app:customfont="Exo2-Regular.otf"
+                    android:layout_marginRight="10dp"
+                    android:textSize="@dimen/profile_txt"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginBottom="1px"
+                android:background="#fcfcfc"
+                android:paddingLeft="@dimen/profile_lr_padding"
+                android:paddingRight="@dimen/profile_lr_padding_rt"
+                android:gravity="center_vertical"
+                android:id="@+id/menu_delete"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:clickable="true"
+                android:tag="202"
+                android:visibility="gone"
+                android:onClick="menuClicked"
+                android:layout_height="@dimen/profile_widget">
+
+                <ImageView
+                    android:clickable="true"
+                    android:tag="202"
+                    android:onClick="menuClicked"
+                    android:scaleType="centerInside"
+                    android:tint="@color/profile_hint_img"
+                    android:src="@drawable/garbage"
+                    android:padding="@dimen/profile_padding"
+                    android:layout_width="@dimen/profile_hint_img"
+                    android:layout_height="@dimen/profile_hint_img" />
+
+                <com.balram.library.FotTextView
+                    android:clickable="true"
+                    android:tag="202"
+                    android:onClick="menuClicked"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right|center_vertical"
+                    android:text="@string/menu_delete"
+                    android:drawablePadding="5dp"
+                    android:paddingBottom="@dimen/profile_etx_gap"
+                    android:textColorHint="@color/profile_hint"
+                    android:textColor="@color/profile_txt"
+                    app:customfont="Exo2-Regular.otf"
+                    android:layout_marginRight="10dp"
+                    android:textSize="@dimen/profile_txt"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginBottom="1px"
+                android:background="#fcfcfc"
+                android:paddingLeft="@dimen/profile_lr_padding"
+                android:paddingRight="@dimen/profile_lr_padding_rt"
+                android:visibility="gone"
+                android:gravity="center_vertical"
+                android:id="@+id/menu_categories"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:clickable="true"
+                android:tag="12"
+                android:onClick="menuClicked"
+                android:layout_height="@dimen/profile_widget">
+
+                <ImageView
+                    android:clickable="true"
+                    android:tag="12"
+                    android:onClick="menuClicked"
+                    android:scaleType="centerInside"
+                    android:tint="@color/profile_hint_img"
+                    android:src="@drawable/menu_categoriess"
+                    android:padding="@dimen/profile_padding"
+                    android:layout_width="@dimen/profile_hint_img"
+                    android:layout_height="@dimen/profile_hint_img" />
+
+                <com.balram.library.FotTextView
+                    android:clickable="true"
+                    android:tag="12"
+                    android:onClick="menuClicked"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right|center_vertical"
+                    android:text="@string/menu_categories"
+                    android:drawablePadding="5dp"
+                    android:paddingBottom="@dimen/profile_etx_gap"
+                    android:textColorHint="@color/profile_hint"
+                    android:textColor="@color/profile_txt"
+                    app:customfont="Exo2-Regular.otf"
+                    android:layout_marginRight="10dp"
+                    android:textSize="@dimen/profile_txt"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_marginBottom="1px"
+                android:background="#fcfcfc"
+                android:paddingLeft="@dimen/profile_lr_padding"
+                android:paddingRight="@dimen/profile_lr_padding_rt"
+                android:gravity="center_vertical"
+                android:id="@+id/menu_sub"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:clickable="true"
+                android:tag="13"
+                android:onClick="menuClicked"
+                android:layout_height="@dimen/profile_widget">
+
+                <ImageView
+                    android:clickable="true"
+                    android:tag="13"
+                    android:onClick="menuClicked"
+                    android:scaleType="centerInside"
+                    android:tint="@color/profile_hint_img"
+                    android:src="@drawable/menu_sub_cat"
+                    android:padding="@dimen/profile_padding"
+                    android:layout_width="@dimen/profile_hint_img"
+                    android:layout_height="@dimen/profile_hint_img" />
+
+                <com.balram.library.FotTextView
+                    android:clickable="true"
+                    android:tag="13"
+                    android:onClick="menuClicked"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right|center_vertical"
+                    android:text="@string/menu_subcat"
+                    android:drawablePadding="5dp"
+                    android:paddingBottom="@dimen/profile_etx_gap"
+                    android:textColorHint="@color/profile_hint"
+                    android:textColor="@color/profile_txt"
+                    app:customfont="Exo2-Regular.otf"
+                    android:layout_marginRight="10dp"
+                    android:textSize="@dimen/profile_txt"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_marginBottom="1px"
+                android:background="#fcfcfc"
+                android:paddingLeft="@dimen/profile_lr_padding"
+                android:paddingRight="@dimen/profile_lr_padding_rt"
+                android:gravity="center_vertical"
+                android:id="@+id/menu_products"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:clickable="true"
+                android:tag="14"
+                android:onClick="menuClicked"
+                android:layout_height="@dimen/profile_widget">
+
+                <ImageView
+                    android:clickable="true"
+                    android:tag="14"
+                    android:onClick="menuClicked"
+                    android:scaleType="centerInside"
+                    android:tint="@color/profile_hint_img"
+                    android:src="@drawable/menu_product"
+                    android:padding="@dimen/profile_padding"
+                    android:layout_width="@dimen/profile_hint_img"
+                    android:layout_height="@dimen/profile_hint_img" />
+
+                <com.balram.library.FotTextView
+                    android:clickable="true"
+                    android:tag="14"
+                    android:onClick="menuClicked"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right|center_vertical"
+                    android:text="@string/menu_product"
+                    android:drawablePadding="5dp"
+                    android:paddingBottom="@dimen/profile_etx_gap"
+                    android:textColorHint="@color/profile_hint"
+                    android:textColor="@color/profile_txt"
+                    app:customfont="Exo2-Regular.otf"
+                    android:layout_marginRight="10dp"
+                    android:textSize="@dimen/profile_txt"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginBottom="1px"
+                android:background="#fcfcfc"
+                android:paddingLeft="@dimen/profile_lr_padding"
+                android:paddingRight="@dimen/profile_lr_padding_rt"
+                android:gravity="center_vertical"
+                android:id="@+id/menu_delivery"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:clickable="true"
+                android:tag="22"
+                android:visibility="gone"
+                android:onClick="menuClicked"
+                android:layout_height="@dimen/profile_widget">
+
+                <ImageView
+                    android:clickable="true"
+                    android:tag="22"
+                    android:onClick="menuClicked"
+                    android:scaleType="centerInside"
+                    android:tint="@color/profile_hint_img"
+                    android:src="@drawable/delivery_truck"
+                    android:padding="@dimen/profile_padding"
+                    android:layout_width="@dimen/profile_hint_img"
+                    android:layout_height="@dimen/profile_hint_img" />
+
+                <com.balram.library.FotTextView
+                    android:clickable="true"
+                    android:tag="22"
+                    android:onClick="menuClicked"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right|center_vertical"
+                    android:text="@string/menu_delivery"
+                    android:drawablePadding="5dp"
+                    android:paddingBottom="@dimen/profile_etx_gap"
+                    android:textColorHint="@color/profile_hint"
+                    android:textColor="@color/profile_txt"
+                    app:customfont="Exo2-Regular.otf"
+                    android:layout_marginRight="10dp"
+                    android:textSize="@dimen/profile_txt"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginBottom="1px"
+                android:background="#fcfcfc"
+                android:paddingLeft="@dimen/profile_lr_padding"
+                android:paddingRight="@dimen/profile_lr_padding_rt"
+                android:gravity="center_vertical"
+                android:id="@+id/menu_status"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:clickable="true"
+                android:tag="21"
+                android:visibility="gone"
+                android:onClick="menuClicked"
+                android:layout_height="@dimen/profile_widget">
+
+                <ImageView
+                    android:clickable="true"
+                    android:tag="21"
+                    android:onClick="menuClicked"
+                    android:scaleType="centerInside"
+                    android:tint="@color/profile_hint_img"
+                    android:src="@drawable/battery"
+                    android:padding="@dimen/profile_padding"
+                    android:layout_width="@dimen/profile_hint_img"
+                    android:layout_height="@dimen/profile_hint_img" />
+
+                <com.balram.library.FotTextView
+                    android:clickable="true"
+                    android:tag="21"
+                    android:onClick="menuClicked"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="right|center_vertical"
+                    android:text="@string/menu_status"
+                    android:drawablePadding="5dp"
+                    android:paddingBottom="@dimen/profile_etx_gap"
+                    android:textColorHint="@color/profile_hint"
+                    android:textColor="@color/profile_txt"
+                    app:customfont="Exo2-Regular.otf"
+                    android:layout_marginRight="10dp"
+                    android:textSize="@dimen/profile_txt"/>
+
+
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginBottom="1px"
+                android:background="#fcfcfc"
+                android:paddingLeft="@dimen/profile_lr_padding"
+                android:paddingRight="@dimen/profile_lr_padding_rt"
+                android:gravity="center_vertical"
+                android:id="@+id/menu_account"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:clickable="true"
+                android:tag="2"
+                android:onClick="menuClicked"
+                android:layout_height="@dimen/profile_widget">
+
+                <ImageView
+                    android:clickable="true"
+                    android:tag="2"
+                    android:onClick="menuClicked"
+                    android:scaleType="centerInside"
+                    android:tint="@color/profile_hint_img"
+                    android:src="@drawable/menu_account"
+                    android:padding="@dimen/profile_padding"
+                    android:layout_width="@dimen/profile_hint_img"
+                    android:layout_height="@dimen/profile_hint_img" />
+
+                <com.balram.library.FotTextView
+                    android:clickable="true"
+                    android:tag="2"
+                    android:onClick="menuClicked"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right|center_vertical"
+                    android:text="@string/menu_account"
+                    android:drawablePadding="5dp"
+                    android:paddingBottom="@dimen/profile_etx_gap"
+                    android:textColorHint="@color/profile_hint"
+                    android:textColor="@color/black"
+                    app:customfont="Exo2-Regular.otf"
+                    android:layout_marginRight="10dp"
+                    android:textSize="@dimen/profile_txt"/>
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_marginBottom="1px"
+                android:background="#fcfcfc"
+                android:paddingLeft="@dimen/profile_lr_padding"
+                android:paddingRight="@dimen/profile_lr_padding_rt"
+                android:gravity="center_vertical"
+                android:id="@+id/menu_notifications"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:clickable="true"
+                android:tag="563"
+                android:onClick="menuClicked"
+                android:layout_height="@dimen/profile_widget">
+
+                <ImageView
+                    android:clickable="true"
+                    android:tag="563"
+                    android:onClick="menuClicked"
+                    android:scaleType="centerInside"
+                    android:tint="@color/profile_hint_img"
+                    android:src="@drawable/menu_elaan"
+                    android:padding="@dimen/profile_padding"
+                    android:layout_width="@dimen/profile_hint_img"
+                    android:layout_height="@dimen/profile_hint_img" />
+
+                <com.balram.library.FotTextView
+                    android:clickable="true"
+                    android:tag="563"
+                    android:onClick="menuClicked"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right|center_vertical"
+                    android:hint="@string/menu_notifications"
+                    android:inputType="phone"
+                    android:singleLine="true"
+                    android:textCursorDrawable="@null"
+                    android:imeOptions="actionDone"
+                    android:drawablePadding="5dp"
+                    android:paddingBottom="@dimen/profile_etx_gap"
+                    android:textColorHint="@color/profile_hint"
+                    android:textColor="@color/black"
+                    app:customfont="Exo2-Regular.otf"
+                    android:layout_marginRight="10dp"
+                    android:textSize="@dimen/profile_txt"/>
+
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_marginBottom="1px"
+                android:background="#fcfcfc"
+                android:paddingLeft="@dimen/profile_lr_padding"
+                android:paddingRight="@dimen/profile_lr_padding_rt"
+                android:gravity="center_vertical"
+                android:id="@+id/menu_language"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:clickable="true"
+                android:tag="37"
+                android:visibility="visible"
+                android:onClick="menuClicked"
+                android:layout_height="@dimen/profile_widget">
+
+                <ImageView
+                    android:clickable="true"
+                    android:tag="37"
+                    android:onClick="menuClicked"
+                    android:scaleType="centerInside"
+                    android:tint="@color/profile_hint_img"
+                    android:src="@drawable/menu_info"
+                    android:padding="@dimen/profile_padding"
+                    android:layout_width="@dimen/profile_hint_img"
+                    android:layout_height="@dimen/profile_hint_img" />
+
+                <com.balram.library.FotTextView
+                    android:clickable="true"
+                    android:tag="37"
+                    android:onClick="menuClicked"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right|center_vertical"
+                    android:hint="@string/menu_help"
+                    android:inputType="phone"
+                    android:singleLine="true"
+                    android:textCursorDrawable="@null"
+                    android:imeOptions="actionDone"
+                    android:drawablePadding="5dp"
+                    android:paddingBottom="@dimen/profile_etx_gap"
+                    android:textColorHint="@color/profile_hint"
+                    android:textColor="@color/black"
+                    app:customfont="Exo2-Regular.otf"
+                    android:layout_marginRight="10dp"
+                    android:textSize="@dimen/profile_txt"/>
+
+
+            </LinearLayout>
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_marginBottom="1px"
+                android:background="#fcfcfc"
+                android:paddingLeft="@dimen/profile_lr_padding"
+                android:paddingRight="@dimen/profile_lr_padding_rt"
+                android:gravity="center_vertical"
+                android:id="@+id/menu_share"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:tag="4"
+                android:onClick="menuClicked"
+                android:clickable="true"
+                android:layout_height="@dimen/profile_widget">
+
+                <ImageView
+                    android:tag="4"
+                    android:onClick="menuClicked"
+                    android:clickable="true"
+                    android:scaleType="centerInside"
+                    android:tint="@color/profile_hint_img"
+                    android:src="@drawable/menu_share"
+                    android:padding="@dimen/profile_padding"
+                    android:layout_width="@dimen/profile_hint_img"
+                    android:layout_height="@dimen/profile_hint_img" />
+
+                <com.balram.library.FotTextView
+                    android:tag="4"
+                    android:onClick="menuClicked"
+                    android:clickable="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right|center_vertical"
+                    android:hint="@string/menu_share"
+                    android:inputType="phone"
+                    android:singleLine="true"
+                    android:textCursorDrawable="@null"
+                    android:imeOptions="actionDone"
+                    android:drawablePadding="5dp"
+                    android:paddingBottom="@dimen/profile_etx_gap"
+                    android:textColorHint="@color/profile_hint"
+                    android:textColor="@color/black"
+                    app:customfont="Exo2-Regular.otf"
+                    android:layout_marginRight="10dp"
+                    android:textSize="@dimen/profile_txt"/>
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#eee">
+        <LinearLayout
+            android:layout_marginBottom="1px"
+            android:background="#fcfcfc"
+            android:paddingLeft="@dimen/profile_lr_padding"
+            android:paddingRight="@dimen/profile_lr_padding_rt"
+            android:gravity="center_vertical"
+            android:id="@+id/menu_logout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:clickable="true"
+            android:tag="1"
+            android:onClick="menuClicked"
+            android:layout_height="@dimen/profile_widget">
+            <ImageView
+                android:clickable="true"
+                android:tag="1"
+                android:onClick="menuClicked"
+                android:scaleType="centerInside"
+                android:tint="@color/profile_hint_img"
+                android:src="@drawable/menu_logout"
+                android:padding="@dimen/profile_padding"
+                android:layout_width="@dimen/profile_hint_img"
+                android:layout_height="@dimen/profile_hint_img" />
+
+            <com.balram.library.FotTextView
+                android:clickable="true"
+                android:tag="1"
+                android:onClick="menuClicked"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right|center_vertical"
+                android:hint="@string/menu_logout"
+                android:inputType="phone"
+                android:singleLine="true"
+                android:textCursorDrawable="@null"
+                android:imeOptions="actionDone"
+                android:drawablePadding="5dp"
+                android:paddingBottom="@dimen/profile_etx_gap"
+                android:textColorHint="@color/profile_hint"
+                android:textColor="@color/black"
+                app:customfont="Exo2-Regular.otf"
+                android:layout_marginRight="10dp"
+                android:textSize="@dimen/profile_txt"/>
+        </LinearLayout>
+        </LinearLayout>
+
+
+      </LinearLayout>
+    </ScrollView>
+</LinearLayout>

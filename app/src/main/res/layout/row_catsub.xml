@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#0000"
+    android:padding="5dp"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@drawable/rounded_cat_unselected"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:id="@+id/namelr"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <com.balram.library.FotTextView
+                android:clickable="false"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/name"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="dddd"
+                android:textColor="@color/orange"
+                app:customfont="Exo2-Regular.otf"
+                android:textSize="14dp"/>
+
+            <TextView
+                android:layout_marginLeft="4dp"
+                android:layout_width="1px"
+                android:id="@+id/seprate"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_height="match_parent"
+                android:background="#addd"/>
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:src="@drawable/edit_circle"
+                android:adjustViewBounds="true"
+                android:tint="#888"
+                android:padding="4dp"
+                android:id="@+id/editicon"
+                android:scaleType="centerInside"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+
+        </LinearLayout>
+
+    <ImageView
+        android:padding="5dp"
+        android:clickable="false"
+        android:layout_centerInParent="true"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:tint="@color/orange"
+        android:src="@drawable/arrow_up"
+        android:id="@+id/addcat"/>
+
+
+</RelativeLayout>
+
+
+</RelativeLayout>
